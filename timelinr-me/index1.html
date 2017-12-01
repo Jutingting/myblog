@@ -1,0 +1,108 @@
+<!-- jquery timelinr这是一款可用于展示历史和计划的时间轴插件，尤其比较适合一些网站展示发展历程、大事件等场景。该插件基于jQuery，可以滑动切换、水平和垂直滚动、支持键盘方向键。 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+</head>
+<body>
+	 <div class="container">
+		<div class="row">
+			<div class="col-xs-2 col-xs-offset-3"><a href="">演示一</a></div>
+			<div class="col-xs-2"><a href="">演示二</a></div>
+			<div class="col-xs-2"><a href="">演示三</a></div>
+		</div>
+
+		<!-- 时间轴事件 包括两个ul-->
+		<div id="timeline">
+			<!-- 时间轴 -->
+			<ul id="dates">
+				<!-- 利用了锚点的知识 -->
+				<li><a href="#1900">1900</a></li>
+				<li><a href="#1944">1944</a></li>
+				<li><a href="#1950">1950</a></li>
+				<li><a href="#1971">1971</a></li>
+				<li><a href="#1999">1999</a></li>
+				<li><a href="#2001">2001</a></li>
+				<li><a href="#2011">2011</a></li>			
+			</ul>
+
+			<!-- 时间轴对应的事件 -->
+			<ul id="issues">
+				<li id="1900">
+					<img src="images/1.png" width="256" height="256" />
+					<div>
+						<h1>1900</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="1944">
+					<img src="images/3.png" width="256" height="256" />
+					<div>
+						<h1>1944</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="1950">
+					<img src="images/4.png" width="256" height="256" />
+					<div>		
+						<h1>1950</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="1971">
+					<img src="images/5.png" width="256" height="256" />
+					<div>		
+						<h1>1971</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="1999">
+					<img src="images/8.png" width="256" height="256" />
+					<div>	
+						<h1>1999</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="2001">
+					<img src="images/9.png" width="256" height="256" />
+					<div>	
+						<h1>2001</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+				<li id="2011">
+					<img src="images/10.png" width="256" height="256" />
+					<div>		
+						<h1>2011</h1>
+						<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. Proin metus odio, aliquam eget molestie nec, gravida ut sapien. Phasellus quis est sed turpis sollicitudin venenatis sed eu odio. Praesent eget neque eu eros interdum malesuada non vel leo. Sed fringilla porta ligula.</p>
+					</div>
+				</li>
+			</ul>
+			<div id="grad_left"></div>
+			<div id="grad_right"></div>
+			<a href="#" id="next" class="move"></a>
+			<a href="#" id="prev" class="move"></a>
+		</div> 
+	</div>
+</body>
+<script type="text/javascript" src="../jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="jquery.timelinr-0.9.4.js" type="text/javascript"></script>
+<script type="text/javascript">
+	// $和$()的区别：
+    // $可以调用那些不需要操作对象的方法（像java代码中的静态方法，不用声明对象就可以操作），如$.prototype，如果是给某个对象赋值（注意，这里有操作对象），就需要用$('#abc').val('123')的方式，因为像val()等方法中会用到$(this)去操作当前对象。
+	$(function(){
+		/*调用该插件的timelinr()方法*/
+		$("#timeline").timelinr();
+		$(".move").hover(function(){
+			$(".move").css("background-position","0 -77px");
+		},function(){
+			$(".move").css("background-position","0 0");
+		})
+	})
+
+</script>
+</html>

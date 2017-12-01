@@ -1,0 +1,120 @@
+/*很多时候设置容器的width很重要*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.container{
+	background: #2a2b2d url('../images/bg_vert.jpg');
+	font-size: 20px;
+}
+
+/*时间轴事件最外层容器*/
+#timeline{
+	width: 800px;
+	height:350px;
+	margin: 30px auto;
+	/*backgroud-position:背景图的位置
+		1、top left/center/right
+		   center left/center/right
+		   bottom left/center/right
+		2、x% y%
+		3、xpos ypos*/
+	background: url('../images/dot.gif') 0 50px repeat-x;
+	/*此处的作用：隐藏溢出*/
+	overflow: hidden;
+	position: relative;
+}
+
+/* 时间轴事件-时间轴的横向展示（弹性盒子布局） */
+ #timeline #dates {
+	width: 700px;
+	height: 60px;
+	margin: 0 auto;
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	
+}
+/*时间轴上样式微调*/
+#timeline #dates a{
+	text-align: center;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+/*引用timelinr()后控制台查看到点击的会有一个selected类*/
+#dates .selected {
+    font-size: 38px;
+    color: #ffcc00;
+}
+/* 大圆点，因为会随着数字位移，所以图片作为其背景比较好 */
+ #timeline #dates li{
+ 	margin-left: 20px;
+ 	background: url("../images/biggerdot.png") no-repeat 22px 48px;
+ }
+
+ /*事件*/
+#issues{
+	width: 800px;
+	height: 290px;
+	margin: 0 auto;
+	overflow: hidden;
+	color: #999;
+	list-style: none;
+}
+#issues li{
+	height: 290px;
+	float: left;
+	overflow: hidden;
+	font-size: 16px;
+}
+/*可单独只有图片浮动，如此文字会围绕在图片周围*/
+#issues li img{ 
+	display: block;
+	float: left;
+	margin: 10px 30px 10px 50px;
+}
+/*浮动文字的时候必须设置宽度，因为正常情况文字都是直线横向占整个宽，
+浮动过去空间不够，因此需要设置宽度才能浮动。*/
+#issues li div{
+	width: 400px;
+	float: right;
+	text-shadow: #000 1px 1px 2px;
+	margin-right: 40px;
+} 
+#issues li div h1{
+	color: #ffcc00;
+	font-size: 48px;
+} 
+
+/*两侧的渐变背景，绝对定位*/
+#grad_left,
+#grad_right {
+	width: 100px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+}
+#grad_left{
+	left: 0;
+	background: url('../images/grad_left.png');
+}
+#grad_right{
+	right:0;
+	background: url('../images/grad_right.png');
+}
+/*左右move的图标，绝对定位*/
+#next,
+#prev {
+	width: 22px;
+	height: 38px;
+	position: absolute;
+	top:170px;
+}
+#next {
+	right: 0;
+	background-image: url('../images/next.png');
+}
+#prev {
+	left: 0;
+	background-image: url('../images/prev.png');
+}
